@@ -5,12 +5,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "postinstall": "chmod +x node_modules/.bin/*"
   },
   "engines": {
-  "node": "20.x"
-},
-
+    "node": "20.x"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "react": "^18.2.0",
