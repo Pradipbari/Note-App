@@ -3,9 +3,9 @@ import axios from "axios";
 const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
 
 export const sendOtp = (email) =>
-  axios.post(`${API_BASE}/auth/send-otp`, { email });
+  axios.post(`${API_BASE}/api/auth/send-otp`, { email });
 export const verifyOtp = (email, code) =>
-  axios.post(`${API_BASE}/auth/verify-otp`, { email, code });
+  axios.post(`${API_BASE}/api/auth/verify-otp`, { email, code });
 
 export const getNotes = (token) =>
   axios.get(`${API_BASE}/api/notes`, {
