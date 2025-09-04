@@ -56,13 +56,14 @@ export default function AuthPage({ onLogin }) {
               </button>
               <div className="text-center mt-3">or</div>
               <a
-                href={`${
-                  process.env.REACT_APP_API_URL || "http://localhost:5000/api"
-                }/auth/google`}
-                className="w-full inline-block text-center mt-3 bg-white border p-2 rounded hover:bg-gray-50"
-              >
-                Continue with Google
-              </a>
+              href={`${
+              process.env.REACT_APP_API_URL || "http://localhost:5000/api"
+              }/auth/google`}
+             className="w-full inline-block text-center mt-3 bg-white border p-2 rounded hover:bg-gray-50"
+               >
+              Continue with Google
+             </a>
+
             </>
           )}
 
