@@ -11,10 +11,12 @@ export const getNotes = (token) =>
   axios.get(`${API_BASE}/api/notes`, {
     headers: { Authorization: `Bearer ${token}` },
   });
+
 export const createNote = (token, note) =>
   axios.post(`${API_BASE}/api/notes`, note, {
     headers: { Authorization: `Bearer ${token}` },
   });
+
 export const deleteNote = (token, id) =>
   axios.delete(`${API_BASE}/api/notes/${id}`, {
     headers: { Authorization: `Bearer ${token}` },
